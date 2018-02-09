@@ -67,6 +67,15 @@ video {
      border: 1px solid black;
  }
 
+ .button-row {
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .button-row button {
+     max-width: 40px;
+ }
+
  /* mobile selector */
 
  @media screen 

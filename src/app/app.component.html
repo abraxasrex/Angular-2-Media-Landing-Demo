@@ -33,7 +33,7 @@
       <mat-card class="full-page" style="padding: 0px">
         <button mat-button color="primary" (click)="skipVideo()" class="full-page skip-button">
           <span class="button-content">Skip</span>
-          <!-- <mat-icon>skip-next</mat-icon> -->
+          <mat-icon> skip_next </mat-icon>
         </button>
       </mat-card>
     </div>
@@ -51,9 +51,9 @@
     <div class="audio-widget">
       <h5>CuttleSoundz(tm) Audio Player</h5>
       <div class = "button-row">
-        <button mat-button (click)="playAudio()">Start</button>
-        <button mat-button (click)="pauseAudio()">Pause</button>
-        <button mat-button (click)="resetAudio()">Reset</button>
+        <button mat-button (click)="playAudio()">Start<mat-icon>play_arrow</mat-icon></button>
+        <button mat-button (click)="pauseAudio()">Pause<mat-icon>pause</mat-icon></button>
+        <button mat-button (click)="resetAudio()">Reset<mat-icon>replay</mat-icon></button>
       </div>
     </div>
   </mat-card>

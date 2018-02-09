@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,51 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
+<!-- global container -->
+
+<div class="full-page landing-background" 
+[ngStyle]="{'background-image': 'url(' + landingInfo.backgroundImage + ')'}">
+  <!-- pre-landing-video component -->
+  <div class="full-page" *ngIf="videoMode">
+    <video class="full-page" 
+    autoplay="true" 
+    height="height"
+    src={{landingInfo.backgroundVideo}}>
+    </video>
+    <div class="video-button">
+      <mat-card class="full-page" style="padding: 0px">
+        <button mat-button color="primary" (click)="skipVideo()" class="full-page skip-button">
+          <span class="button-content">Skip</span>
+          <!-- <mat-icon>skip-next</mat-icon> -->
+        </button>
+      </mat-card>
+    </div>
+
+  </div>
+  <!-- landing-page component -->
+  <div class="full-page" *ngIf="!videoMode">
+   <mat-card class="landing-column">
+    <div>
+      <h1>{{landingInfo.title}}</h1>
+      <p>{{landingInfo.copyText}}</p>
+    </div>
+    
+    <mat-divider></mat-divider>
+    <div class="audio-widget">
+      <h5>CuttleSoundz(tm) Audio Player</h5>
+      <div class = "button-row">
+        <button mat-button (click)="playAudio()">Start</button>
+        <button mat-button (click)="pauseAudio()">Pause</button>
+        <button mat-button (click)="resetAudio()">Reset</button>
+      </div>
+    </div>
+  </mat-card>
+    <!-- <audio mat-button controls="controls">
+        Your browser does not support the <code>audio</code> element.
+        <source src="{{landingInfo.audio}}" type="audio/wav">
+      </audio> -->
+  </div>
+
+</div>

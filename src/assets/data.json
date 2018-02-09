@@ -1,0 +1,7 @@
+{
+    "backgroundImage":"./assets/cuttlepic.jpg",
+    "backgroundVideo": "./assets/cuttlevid.mp4",
+    "copyText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec diam vitae metus hendrerit rhoncus. Nam eu elit diam. Maecenas non metus sit amet nisl efficitur suscipit ac eget orci.Proin nec rhoncus lectus. Sed ornare tristique neque non rutrum. Phasellus id aliquam nisl. Cras a leo enim. Nullam nec luctus lacus. Nullam vel dolor ut mauris egestas vestibulum. Nullam luctus tortor in mollis molestie. Nunc mattis elementum nulla rhoncus posuere. Integer euismod interdum turpis a finibus.Donec et orci in diam consectetur lacinia vitae mattis augue. Etiam mattis tincidunt arcu ut sollicitudin. Aliquam eget mattis odio. Aliquam et metus ligula. Duis sit amet enim interdum, egestas magna ut, rhoncus ipsum. Quisque eget neque sodales, fermentum dui sit amet, elementum lacus. In finibus sapien dictum lorem dapibus, vitae mollis ex tempor. Aliquam non lacinia lacus. Donec erat justo, suscipit sit amet vehicula ac, sagittis in turpis. Curabitur condimentum lorem et sollicitudin convallis. Cras sit amet turpis urna. Proin viverra erat odio, imperdiet varius risus hendrerit id.",
+    "title":"Cuttlefish Emporium",
+    "audio":"./assets/waterworld.mp3"
+}

@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    font-family: 'Robot', sans-serif;
+}
+.landing-background {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 1080px;
+}
+
+.landing-column {
+  margin: 0 auto;
+  width: 25%;
+  display: flex;
+  align-content: column;
+  justify-content: center;
+}
+
+.landing-column > * {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.audio-widget {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.audio-widget > * {
+    margin: 0 auto;
+}
+
+body, .full-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-height: 1080px;
+}
+
+video {
+    object-fit: fill;
+}
+
+.video-button {
+    z-index: 5;
+    position: absolute;
+    left: 75%;
+    -webkit-transform: translateX(-75%);
+    transform: translateX(-75%);
+    top: 75%;
+    -webkit-transform: translateY(75%);
+    transform: translateY(75%);
+}
+
+.skip-button {
+    height: 75px;
+    width:150px;
+    font-size: 48px;
+ }
+
+ button.mat-button {
+     border: 1px solid black;
+ }
+
+ /* mobile selector */
+
+ @media screen 
+  and (min-width: 300px) 
+  and (min-height: 600px) 
+  and (max-height: 800px)
+  and (max-width: 450px)
+                              {
+
+ .video-button {
+    z-index: 5;
+    position: absolute;
+    left: 10%;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+    top: 10%;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+}
+
+.landing-column {
+    width: 40%;
+}
+
+.landing-background {
+    background: repeat-y;
+}
+
+body, .full-page{
+    max-height: 1500px;
+
+}
+
+}
